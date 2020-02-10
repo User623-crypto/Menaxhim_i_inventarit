@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <children>
+        <Label text="Hyr">
+          <font>
+            <Font name="System Bold" size="30.0" />
+          </font>
+        </Label>
+        <GridPane maxWidth="600.0" prefWidth="580.0">
+          <children>
+            <Label prefWidth="133.0" text="Emri" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Mbiemri" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label prefWidth="155.0" text="FjaleKalimi" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField prefWidth="309.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <TextField prefWidth="305.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="194.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="598.0" minWidth="10.0" prefWidth="566.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <Label text="Label" />
+        <Button mnemonicParsing="false" text="Hyr" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.UserViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label fx:id="titulli" text="Krijo Perdorues">
+          <font>
+            <Font name="System Bold" size="30.0" />
+          </font>
+        </Label>
+        <HBox prefHeight="200.0" prefWidth="760.0">
+          <children>
+            <GridPane hgap="0.0" prefHeight="200.0" prefWidth="595.0" vgap="0.0" HBox.margin="$x2">
+              <children>
+                <Label text="Emri:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                  <font>
+                    <Font size="20.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label font="$x1" text="Mbiemri:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Label font="$x1" text="Datelindja" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="fNTextField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <TextField fx:id="lNTextField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="bTextField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label font="$x1" text="Fjalekalimi" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Label font="$x1" text="Konfirmo Fjalekalimin" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <PasswordField fx:id="pwF" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <PasswordField fx:id="cpwf" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="104.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="279.0" />
+              </columnConstraints>
+              <padding>
+                <Insets fx:id="x2" />
+              </padding>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </HBox>
+        <Label fx:id="InvalidTextField" text="Label" />
+        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+          <children>
+            <Button fx:id="regButton" mnemonicParsing="false" onAction="#Regjistro" text="Regjistro" />
+            <Button mnemonicParsing="false" onAction="#Kthehu" text="Kthehu" />
+          </children>
+        </HBox>
+      </children>
+      <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+    </VBox>
+  </children>
+</AnchorPane>

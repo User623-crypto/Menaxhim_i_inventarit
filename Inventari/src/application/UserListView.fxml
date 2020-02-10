@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.UserListViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label text="Lista e Perdoruesve">
+          <font>
+            <Font name="System Bold" size="30.0" />
+          </font>
+        </Label>
+        <TableView id="UserTable" fx:id="tableView" onMouseClicked="#rowSelected" prefHeight="200.0" prefWidth="200.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="68.0" text="ID" fx:id="idCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="177.0" text="Emri" fx:id="fNCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="213.0" text="Mbiemri" fx:id="lNCol" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="300.0" text="Datelindja" fx:id="bCol" />
+          </columns>
+        </TableView>
+        <ToolBar>
+          <items>
+            <Button fx:id="KrijoPerdorues" mnemonicParsing="false" onAction="#krijoPerdorues" text="Krijo Perdorues" />
+            <Button fx:id="mod" mnemonicParsing="false" onAction="#modPushed" text="Modifiko Perdorues" />
+          </items>
+        </ToolBar>
+      </children>
+      <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+    </VBox>
+  </children>
+</AnchorPane>
